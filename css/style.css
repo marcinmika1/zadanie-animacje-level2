@@ -1,5 +1,9 @@
 body {
     box-sizing: border-box;
+    background-image: url(../img/Sexy%20Girl.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 div.pierwszy {
@@ -75,6 +79,29 @@ li:before {
     /* same as padding-left set on li */
     width: 1.3em;
     /* same as padding-left set on li */
+}
+
+
+
+
+
+/*jak ustawić zeby link z koncowka .doc miał inny kolor*/
+
+a[href$='.doc']{
+    color: firebrick;
+
+}
+
+a[href$='.docx']{
+    color: darkorange;
+    
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   */
+    
+    
+    
+    
+    
+    
 }
 
 div#footer {
@@ -164,16 +191,86 @@ img.heart{
     }
 }
 
-div#kurtyna-gora{
+#kurtyna-gora{
     width: 100%;
-    height: 48vh;
-    top: 0;
+    height: 0vh;
+    background-color: dimgrey;
     position: fixed;
-    background-color: aquamarine;
+    top: 0;
+    animation-name: dol;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
 }
 
-div#kurtyna-dol{
+#kurtyna-dol{
     background-color: aqua;
     width: 100%;
-    height: 60px;
+    height: 0vh;
+    position: fixed;
+    bottom: 0;
+    animation-name: dol;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes dol{        <div id="obrot">
+            <div id="przod"></div>
+            <div id="tyl"></div>
+        </div>
+    0%{
+            width: 100%;
+    height: 1vh;
+    }
+    100%{
+            width: 100%;
+    height: 50vh;
+    }
+
+}
+
+
+#zad5{
+    width: 100%;
+    height: 100vh;
+    background-color: fuchsia;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+div#zad5 div{
+    height: 100%;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+div#zad5 div.a{
+    background-color: aliceblue;
+}
+div#zad5 div.a:hover {
+    width: 40%;
+    position: absolute;
+}
+.b{
+    background-color: floralwhite;
+}
+div#zad5 div.b:hover{
+     width: 40%;
+    position: absolute;
+}
+.c{
+    background-color: dodgerblue;
+}
+div#zad5 div.c:hover{
+     width: 40%;
+    position: absolute;
+}
+.d{
+    background-color: dimgray;
+}
+div#zad5 div.d:hover{
+     width: 40%;
+    position: absolute;
 }
