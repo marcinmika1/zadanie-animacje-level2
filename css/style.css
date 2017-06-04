@@ -243,7 +243,6 @@ div#zad5 div{
     height: 100%;
     width: 25%;
     float: left;
-    position: relative;
 }
 
 div#zad5 div.a{
@@ -251,26 +250,22 @@ div#zad5 div.a{
 }
 div#zad5 div.a:hover {
     width: 40%;
-    position: absolute;
 }
 .b{
     background-color: floralwhite;
 }
 div#zad5 div.b:hover{
      width: 40%;
-    position: absolute;
 }
 .c{
     background-color: dodgerblue;
 }
 div#zad5 div.c:hover{
      width: 40%;
-    position: absolute;
 }
 .d{
     background-color: dimgray;
 }
 div#zad5 div.d:hover{
      width: 40%;
-    position: absolute;
 }
