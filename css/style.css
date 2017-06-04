@@ -1,9 +1,12 @@
+body {
+    box-sizing: border-box;
+}
+
 div.pierwszy {
     background-color: beige;
     width: 400px;
     height: 400px;
     position: relative;
-
 }
 
 div.drugi {
@@ -13,11 +16,9 @@ div.drugi {
     position: absolute;
     left: 25vh;
     top: 10vw;
-
 }
 
-
-div.przycisk{
+div.przycisk {
     width: 50px;
     height: 50px;
     background-color: aqua;
@@ -25,32 +26,90 @@ div.przycisk{
     line-height: 50px;
     border-radius: 50%;
     font-size: 30px;
-    color: white;   
+    color: white;
 }
-div.przycisk:hover{
+
+div.przycisk:hover {
     background-color: aquamarine;
 }
 
-div.reibow{
+div.reibow {
     width: 100%;
     height: 100px;
-    background: red; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left, red , pink); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, red, pink); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, red, pink); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, red , pink); /* Standard syntax (must be last) */
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, pink);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, pink);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, pink);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, pink);
+    /* Standard syntax (must be last) */
 }
 
-video{
+video {
     width: 100%;
     height: auto;
-    
 }
 
 form input::placeholder {
     color: red;
 }
 
-ul{
-    list-style-image: url(font-awesome-4.7.0/css/font-awesome.min.css)
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-left: 1.3em;
+}
+
+li:before {
+    content: "\f00c";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+}
+
+div#footer {
+    background-color: aqua;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0px;
+}
+
+div#foto {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+div#foto figure{
+    width: 200px;
+    height: 200px;
+}
+
+div#foto figure img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: cente
+}
+
+div#foto figure img:hover {
+    transform: scale(2);
 }
