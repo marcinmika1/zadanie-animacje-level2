@@ -81,8 +81,8 @@ div#footer {
     background-color: aqua;
     width: 100%;
     height: 30px;
-    position: fixed;
     bottom: 0px;
+    
 }
 
 div#foto {
@@ -112,4 +112,68 @@ div#foto figure img {
 
 div#foto figure img:hover {
     transform: scale(2);
+}
+
+q:lang(en){
+    
+}
+q:lang(pl){
+    
+}
+
+blockquote:lang(en){
+
+}
+
+blockquote:lang(en):before{
+    content: "\201C";
+}
+
+blockquote:lang(en):after{
+    content: "\201C";
+}
+
+blockquote:lang(pl){
+    
+}
+
+blockquote:lang(pl):before{
+    content: open-quote;
+    
+}
+blockquote:lang(pl):after{
+    content: close-quote;
+}
+
+img.heart{
+    width: 20px;
+    height: 20px;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes heart{
+    0%, 100% {
+    width: 40px;
+    height: 40px;
+    }
+    50%{
+    width: 20px;
+    height: 20px;
+    }
+}
+
+div#kurtyna-gora{
+    width: 100%;
+    height: 48vh;
+    top: 0;
+    position: fixed;
+    background-color: aquamarine;
+}
+
+div#kurtyna-dol{
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
 }
